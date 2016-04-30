@@ -1,0 +1,28 @@
+{
+	"manifest_version": 2,
+
+	"name": "IMDb Extension for Netflix",
+
+	"version": "1.0.0",
+
+	"description": "Displays IMDb ratings next to movies and TV shows on Netflix", 
+
+	"author": "Michelle Fergis",
+
+	"content_scripts": [
+		{
+			"matches": ["https://www.netflix.com/browse", "http://www.netflix.com/browse"],
+			"css": ["content-scripts/css/netflix.css"],
+			"js": ["content-scripts/jquery-1.11.1.js", "content-scripts/netflix.js"]
+		}
+	],
+
+	"permissions": [
+		"activeTab"
+	],
+
+	"page_action": {
+		"default_icon": "IMDb.png",
+		"default_title": "IMDb Extension for Netflix"
+	}
+}

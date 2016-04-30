@@ -1,0 +1,15 @@
+.popUp {
+  visibility: hidden;
+  position: absolute;
+  border-radius: 25px;
+  border-color: #ffffff;
+  border-width: 5px;
+  border-style: solid;
+  padding: 10px; 
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  font-family: 'Helvetica Neue';
+  width:250px;
+  height:250px;
+}
